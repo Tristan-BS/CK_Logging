@@ -61,10 +61,10 @@ CKLogging::~CKLogging() {
     }
 }
 
-void CKLogging::Log(const char* Message, LogType LogType, const char* Alignment, const char* FileName, int LineNumber) {
+void CKLogging::Log(const char* Message, LogType LogType, const char* FileName, int LineNumber) {
     std::string Timestamp = FormatDate(getDate()) + " " + getTime();
     std::string ShortFileName = ExtractFileName(FileName);
-    WriteToFile(Message, LogType, Timestamp.c_str(), Alignment, ShortFileName.c_str(), LineNumber);
+    WriteToFile(Message, LogType, Timestamp.c_str(), ShortFileName.c_str(), LineNumber);
 }
 
 std::string CKLogging::getDate() {
@@ -126,7 +126,7 @@ std::string CKLogging::FormatDate(std::string Date) {
     return Day + "." + Month + "." + Year;
 }
 
-bool CKLogging::WriteToFile(const char* Message, LogType LogType, const char* Timestamp, const char* Alignment, const char* FileName, int LineNumber) {
+bool CKLogging::WriteToFile(const char* Message, LogType LogType, const char* Timestamp, const char* FileName, int LineNumber) {
     if (File.is_open()) {
         File << "[" << Timestamp << "] ";
         File << "[" << getLogType(LogType) << "] ";
@@ -144,3 +144,4 @@ std::string CKLogging::ExtractFileName(const std::string& filePath) {
     }
     return filePath;
 }
+
