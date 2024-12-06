@@ -27,6 +27,10 @@ private:
     bool WriteToFile(const char* Message, LogType LogType, const char* Timestamp, const char* FileName, int LineNumber);
     std::string ExtractFileName(const std::string& filePath);
     std::string FormatDate(std::string Date);
+    void LoadConfig(const std::string& ConfigFilePath);
+
+    std::string LogPath;
+    std::string LogFileName;
 };
 
 #endif // CK_LOGGING_H

@@ -1,4 +1,7 @@
 #include "CKLogging.h"
+#include "../inih/cpp/INIReader.h"
+#include "../inih/cpp/INIReader.cpp"
+#include "../inih/ini.c"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -17,12 +20,15 @@ std::string FileName;
 std::ofstream File;
 
 CKLogging::CKLogging() {
-    FileName = "LogFile_" + getDate() + ".log";
+    std::string ConfigFilePath = "Config.ini";
+	LoadConfig(ConfigFilePath);
+
+    FileName = LogFileName + getDate() + ".log";
     cout << FileName << endl;
 
-    if (stat("Logs", &info) != 0) {
+    if (stat(LogPath.c_str(), &info) != 0) {
         cout << "Directory does not exist, creating directory" << endl;
-        if (_mkdir("Logs") == 0) {
+        if (_mkdir(LogPath.c_str()) == 0) {
             cout << "Directory created successfully" << endl;
         }
         else {
@@ -30,10 +36,9 @@ CKLogging::CKLogging() {
         }
     }
 
-    // Check if file exists
-    std::string filePath = "Logs/" + FileName;
+    std::string filePath = LogPath + FileName;
+
     if (stat(filePath.c_str(), &info) == 0) {
-        // File exists, open in append mode
         File.open(filePath, std::ios::app);
         if (File.is_open()) {
             cout << "File opened successfully in append mode" << endl;
@@ -43,7 +48,6 @@ CKLogging::CKLogging() {
         }
     }
     else {
-        // File does not exist, create new file
         File.open(filePath);
         if (File.is_open()) {
             cout << "File created successfully" << endl;
@@ -125,6 +129,26 @@ std::string CKLogging::FormatDate(std::string Date) {
     std::string Day = Date.substr(8, 2);
     return Day + "." + Month + "." + Year;
 }
+
+void CKLogging::LoadConfig(const std::string& ConfigFilePath) {
+    INIReader Reader(ConfigFilePath);
+
+    if (Reader.ParseError() < 0) {
+        cout << "Can't load 'Config.ini'\n";
+        return;
+    }
+
+    LogPath = Reader.Get("CKLogging", "LogPath", "");
+    LogFileName = Reader.Get("CKLogging", "LogFileName", "");
+
+    if (LogPath.empty()) {
+        LogPath = "Logs/";
+    }
+    if (LogFileName.empty()) {
+        LogFileName = "LogFile_";
+    }
+}
+
 
 bool CKLogging::WriteToFile(const char* Message, LogType LogType, const char* Timestamp, const char* FileName, int LineNumber) {
     if (File.is_open()) {

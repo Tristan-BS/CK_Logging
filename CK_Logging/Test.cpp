@@ -6,6 +6,7 @@
 CKLogging Logger;
 
 int main() {
+    int i = 5;
     LOG(Logger, "This is a test log message", I);
     return 0;
 }

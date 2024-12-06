@@ -1,5 +1,0 @@
-----------          CK Logging          ----------
-[2024_12_05 15:07:24] [INFORMATION] [C:\APC\Eigene Programme\C++\CK_Logging\CK_Logging\CKLogging.h:27] This is a test log message
-[05.12.2024 15:08:57] [INFORMATION] [C:\APC\Eigene Programme\C++\CK_Logging\CK_Logging\CKLogging.h:27] This is a test log message
-[05.12.2024 15:10:48] [INFORMATION] [CKLogging.h:27] This is a test log message
-[05.12.2024 15:25:31] [INFORMATION] [Test.cpp:9] This is a test log message

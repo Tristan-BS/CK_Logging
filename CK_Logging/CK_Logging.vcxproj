@@ -133,6 +133,9 @@
     <ClCompile Include="CKLogging.cpp" />
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Config.ini" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

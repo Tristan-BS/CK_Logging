@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\CKLogging.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|solutionrelative:CK_Logging\\CKLogging.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\Config.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|solutionrelative:CK_Logging\\Config.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\CKLogging.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|solutionrelative:CK_Logging\\CKLogging.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|solutionrelative:CK_Logging\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\CKLogging.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{11ACDEA2-D193-42DF-A463-C8F9E6996988}|CK_Logging\\CK_Logging.vcxproj|solutionrelative:CK_Logging\\CKLogging.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,38 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Config.ini",
+              "DocumentMoniker": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\Config.ini",
+              "RelativeDocumentMoniker": "CK_Logging\\Config.ini",
+              "ToolTip": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\Config.ini",
+              "RelativeToolTip": "CK_Logging\\Config.ini",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
+              "WhenOpened": "2024-12-06T08:59:41.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Test.cpp",
               "DocumentMoniker": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\Test.cpp",
               "RelativeDocumentMoniker": "CK_Logging\\Test.cpp",
               "ToolTip": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\Test.cpp",
               "RelativeToolTip": "CK_Logging\\Test.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-05T13:05:25.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CKLogging.cpp",
               "DocumentMoniker": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\CKLogging.cpp",
               "RelativeDocumentMoniker": "CK_Logging\\CKLogging.cpp",
               "ToolTip": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\CKLogging.cpp",
               "RelativeToolTip": "CK_Logging\\CKLogging.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAnwEEAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-05T12:50:46.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CKLogging.h",
               "DocumentMoniker": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\CKLogging.h",
               "RelativeDocumentMoniker": "CK_Logging\\CKLogging.h",
               "ToolTip": "C:\\APC\\Eigene Programme\\C\u002B\u002B\\CK_Logging\\CK_Logging\\CKLogging.h",
               "RelativeToolTip": "CK_Logging\\CKLogging.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-05T12:50:23.312Z",
               "EditorCaption": ""
