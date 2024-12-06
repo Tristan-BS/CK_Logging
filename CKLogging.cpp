@@ -145,10 +145,15 @@ void CKLogging::LoadConfig(const std::string& ConfigFilePath) {
     if (LogPath.empty()) {
         LogPath = "Logs/";
     }
+    else if (LogPath.back() != '/' && LogPath.back() != '\\') {
+        LogPath += '/';
+    }
+
     if (LogFileName.empty()) {
         LogFileName = "LogFile_";
     }
 }
+
 
 
 bool CKLogging::WriteToFile(const char* Message, LogType LogType, const char* Timestamp, const char* FileName, int LineNumber) {

@@ -130,8 +130,8 @@
     <ClInclude Include="CKLogging.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Test.cpp" />
     <ClCompile Include="CKLogging.cpp" />
-    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Config.ini" />
